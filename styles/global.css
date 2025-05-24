@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Font family and size TITLE */
+
+    --font-title: "Asap", sans-serif;
+    --title-lg: 800 56px/120% var(--font-title);
+    --title-md: 800 24px/120% var(--font-title);
+    --title-sm: 800 16px/120% var(--font-title);
+
+    /* Font family and size SUBTITLE */
+    --font-sub: "Inconsolata", monospace;
+    --sub: 400 20px/120% var(--font-sub);
+
+    /* Font family and size Text*/
+    --font-text: "Maven Pro", sans-serif;
+    --text-md: 400 16px/140% var(--font-text);
+    --text-sm: 400 14px/140% var(--font-text); 
+
+
+    /* Colors */
+    --gray-100: #0D0E11;
+    --gray-200: #16181D;
+    --gray-300: #292C34;
+    --gray-400: #878EA1;
+    --gray-500: #C0C4CE;
+    --gray-600: #E2E4E9;
+    --red: #E3646E;
+    --purple: #BB72E9;
+    --blue: #3996DB; 
+    --green: #82BC4F;
+    --yelow: #EABD5F;
+}
+
+h1, h2, h3 {
+    color: var(--gray-600);
+}
+
+p, h4{
+    color: var(--gray-500);
+}
+
+html, body {
+    background-color: var(--gray-200);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    min-height: 100vh;
+    max-width: 100vw;
+}
+
+main {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.filter-blue {
+  filter: brightness(0) saturate(100%) invert(49%) sepia(100%) saturate(367%) hue-rotate(164deg) brightness(89%) contrast(91%);
+}
+
+.filter-yellow  {
+  filter: brightness(0) saturate(100%) invert(79%) sepia(37%) saturate(644%) hue-rotate(349deg) brightness(96%) contrast(90%);
+}
+
+.filter-red {
+  filter: brightness(0) saturate(100%) invert(54%) sepia(23%) saturate(1779%) hue-rotate(309deg) brightness(94%) contrast(88%);
+}
+
+.filter-green {
+  filter: brightness(0) saturate(100%) invert(56%) sepia(92%) saturate(395%) hue-rotate(45deg) brightness(94%) contrast(88%);
+}
+
+/* Media queries para responsividade geral */
+@media (max-width: 768px) {
+  :root {
+    --title-lg: 800 42px/120% var(--font-title);
+    --title-md: 800 22px/120% var(--font-title);
+    --sub: 400 18px/120% var(--font-sub);
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --title-lg: 800 32px/120% var(--font-title);
+    --title-md: 800 20px/120% var(--font-title);
+    --sub: 400 16px/120% var(--font-sub);
+  }
+}

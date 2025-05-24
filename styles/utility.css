@@ -1,0 +1,48 @@
+.title-lg {
+  font: var(--title-lg);
+}
+
+.title-md {
+  font: var(--title-md);
+}
+
+.title-sm {
+  font: var(--title-sm);
+}
+
+
+.sub {
+  font: var(--sub);
+}
+
+.text-md {
+  font: var(--text-md);
+  color: var(--gray-500);
+}
+
+.text-sm {
+  font: var(--text-sm);
+}
+
+.redd {
+  color: var(--red);
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-2cols {
+  grid-template-columns: repeat(2,1fr);
+}
+
+.gap-24 {
+  gap: 24px;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+  .grid-2cols {
+    grid-template-columns: 1fr;
+  }
+}
